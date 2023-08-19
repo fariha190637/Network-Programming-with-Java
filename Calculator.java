@@ -1,4 +1,3 @@
-package project;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -44,7 +43,7 @@ res=new JTextField(10);
 add(p,BorderLayout.CENTER);
 add(res,BorderLayout.NORTH);
 setVisible(true);
-setSize(300,300);
+setSize(200,200);
 }
 public void actionPerformed(ActionEvent ae){
 JButton pb=(JButton)ae.getSource();
@@ -57,8 +56,7 @@ else if(pb==b14)
 {
 n2=Integer.parseInt(res.getText());
 eval();
-//res.setText(""+r);
-JOptionPane.showMessageDialog(this,"Total: "+r);
+res.setText(""+r);
 }
 else
 {
